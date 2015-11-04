@@ -33,7 +33,7 @@ form {
   position: fixed;
   width: 256px;
   z-index: -1;
-  will-change: transform; // added
+  //will-change: transform; // added
 }
 
 .randomPizzaContainer {
@@ -53,9 +53,6 @@ form {
 
 // Int
 #movingPizzas1 {
-    overflow: hidden;
-    position: absolute;
-    width: 100%;
-    //height: 1000px;
+    will-change: transform; // added
     
 }
