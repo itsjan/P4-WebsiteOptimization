@@ -515,10 +515,11 @@ function updatePositions() {
     window.performance.mark("mark_start_frame");
 
     // Calculations have been moved out of the for loop --->
+    
     var phaseBase = document.body.scrollTop / 1250;
     var phaseValues = [];
     for (var i = 0; i < 5; i++)
-        phaseValues[i] = Math.sin((phaseBase) + (i % 5));
+        phaseValues[i] = Math.sin(phaseBase + i % 5);
 
 
     var items = document.getElementsByClassName('mover');
@@ -529,6 +530,14 @@ function updatePositions() {
         var phase = phaseValues[i % 5];
         items[i].style.left = items[i].basicLeft + 100 * phase + 'px';
     }
+    
+   /*
+    var items = document.querySelectorAll('.mover');
+    for (var i = 0; i < items.length; i++) {      
+        var phase = Math.sin((document.body.scrollTop / 1250) + (i % 5));
+        items[i].style.left = items[i].basicLeft + 100 * phase + 'px';
+    }
+    */
 
 
 

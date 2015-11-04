@@ -3,11 +3,13 @@
 
 ###Part 1
 
-(http://localhost:8383/frontend-nanodegree-mobile-portfolio/)
+[http://itsjan.github.io/P4-WebsiteOptimization/]
+
+
 
 
 ###Part 2
-http://localhost:8383/frontend-nanodegree-mobile-portfolio/views/pizza.html
+[http://itsjan.github.io/P4-WebsiteOptimization/views/pizza.html]
 
 
 ####main.js
