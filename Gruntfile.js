@@ -7,16 +7,23 @@ module.exports = function (grunt) {
         //    // 2. Configuration for concatinating files goes here.
         //}
         imagemin: {
-            dynamic: {
+            dynamic_img: {
                 files: [{
                         expand: true,
-                        cwd: 'images/',
+                        cwd: 'private/img/',
                         src: ['**/*.{png,jpg,gif}'],
-                        dest: 'images/build/'
+                        dest: 'img/'
+                    }]
+            },
+            dynamic_views: {
+                files: [{
+                        expand: true,
+                        cwd: 'private/views/images/',
+                        src: ['**/*.{png,jpg,gif}'],
+                        dest: 'views/images/'
                     }]
             }
         }
-
     });
 
     // 3. Where we tell Grunt we plan to use this plug-in.
