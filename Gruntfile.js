@@ -69,19 +69,35 @@ module.exports = function (grunt) {
                         dest: 'views/images/'
                     }]
             }
-        }
+        },
+        inlinecss: {
+            main: {
+                options: {
+                },
+                src: '_index.html',
+                css: ['css/*.css'],
+                dest: 'index.html'
 
+                        //files: {
+                        //    '_index.html': 'index.html'
+            }
+        }
     });
+
+
+    //});
 
     // 3. Where we tell Grunt we plan to use this plug-in.
     // grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.loadNpmTasks('grunt-responsive-images');
+    grunt.loadNpmTasks('grunt-inline-css');
+
 
     // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
     // grunt.registerTask('default', ['concat']);
     // grunt.registerTask('default', ['concat', 'uglify', 'imagemin']);
-    grunt.registerTask('default', ['responsive_images', 'imagemin']);
+    grunt.registerTask('default', ['responsive_images', 'imagemin', 'inlinecss']);
 
 };
 

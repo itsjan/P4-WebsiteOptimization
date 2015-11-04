@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "devDependencies": {
     "grunt": "~0.4.1",
-    "grunt-contrib-imagemin": "^0.9.4"
+    "grunt-contrib-imagemin": "^0.9.4",
+    "grunt-inline-css": "^0.1.5"
   },
   "dependencies": {
     "grunt-responsive-images": "^0.1.7"
