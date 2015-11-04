@@ -1,7 +1,8 @@
 {
-    "name": "P4-WebsiteOptimization",
-    "version": "0.1.0",
-    "devDependencies": {
-        "grunt": "~0.4.1"
+  "name": "P4-WebsiteOptimization",
+  "version": "0.1.0",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-imagemin": "^0.9.4"
   }
 }
