@@ -3,7 +3,7 @@
 
 ###Part 1
 
-http://localhost:8383/frontend-nanodegree-mobile-portfolio/
+(http://localhost:8383/frontend-nanodegree-mobile-portfolio/)
 
 
 ###Part 2
