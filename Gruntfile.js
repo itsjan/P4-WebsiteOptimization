@@ -63,6 +63,7 @@ module.exports = function (grunt) {
                         //files: {
                         //    '_index.html': 'index.html'
             }
+            
         }
     });
 
@@ -74,6 +75,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.loadNpmTasks('grunt-responsive-images');
     grunt.loadNpmTasks('grunt-inline-css');
+    
 
 
     // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
