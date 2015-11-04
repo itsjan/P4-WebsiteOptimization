@@ -8,32 +8,14 @@ module.exports = function (grunt) {
         //}
 
         responsive_images: {
-            dynamic_img: {
-                options: {engine: 'im',
-                    newFilesOnly: true,
-                    sizes: [{
-                            name: 'small',
-                            width: '30%',
-                            //suffix: '_small',
-                            quality: 20
-                        }, {
-                            name: 'large',
-                            width: '50%',
-                            //suffix: '_large',
-                            quality: 40
-                        }]},
-                files: [{
-                        expand: true,
-                        cwd: 'private/img/',
-                        src: ['**/*.{jpg,gif,png}'],
-                        dest: 'img/'
-                    }]
-            },
+            
+            
             dynamic_views: {
                 options: {engine: 'im',
                     newFilesOnly: true,
                     sizes: [{
-                            name: 'small',
+                            name: 'optimized',
+                            height: '73px',
                             width: '100px',
                             //suffix: '_small',
                             quality: 100
@@ -46,7 +28,7 @@ module.exports = function (grunt) {
                 files: [{
                         expand: true,
                         cwd: 'private/views/images/',
-                        src: ['**/*.{jpg,gif,png}'],
+                        src: ['pizza.png'],
                         dest: 'views/images/'
                     }]
             }
