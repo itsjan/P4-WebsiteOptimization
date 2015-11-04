@@ -451,7 +451,8 @@ var resizePizzas = function (size) {
     // Iterates through pizza elements on the page and changes their widths
     function changePizzaSizes(size) {
         // measure just the first pizza-->
-        var randomPizzaContainer = document.querySelectorAll(".randomPizzaContainer");
+        //var randomPizzaContainer = document.querySelectorAll(".randomPizzaContainer");
+        var randomPizzaContainer = document.getElementsByClassName(".randomPizzaContainer");
         var dx = determineDx(randomPizzaContainer[1], size);
         var newwidth = (randomPizzaContainer[1].offsetWidth + dx) + 'px';
         // <--
@@ -541,7 +542,9 @@ window.addEventListener('scroll', updatePositions);
 document.addEventListener('DOMContentLoaded', function () {
     var cols = 8;
     var s = 256;
-    for (var i = 0; i < 200; i++) {
+    
+    //for (var i = 0; i < 200; i++) {
+    for (var i = 0; i < 80; i++) {
         var elem = document.createElement('img');
         elem.className = 'mover';
         elem.src = "images/pizza-optimized.png";
