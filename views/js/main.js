@@ -520,7 +520,7 @@ function updatePositions() {
         phaseValues[i] = Math.sin((phaseBase) + (i % 5));
 
 
-    var items = document.querySelectorAll('.mover');
+    var items = document.getElementsByClassName('mover');
 
 
 
@@ -554,7 +554,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var s = 256;
 
     //for (var i = 0; i < 200; i++) {
-    for (var i = 0; i < 200; i++) {
+    for (var i = 0; i < 50; i++) {
         var elem = document.createElement('img');
         elem.className = 'mover';
         elem.src = "images/pizza-optimized.png";
