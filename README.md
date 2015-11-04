@@ -7,13 +7,17 @@
 
 #####function changePizzaSizes(size)
 
-Calculations are moved out of the for loop
+- Calculations are moved out of the for loop
 
 #####function updatePositions()
+- Calculations are moved out of the for loop
 
-Calculations are moved out of the for loop
+#####document.addEventListener('DOMContentLoaded', function () { ...
+- Number of pizzas added to the document is reduced to 50
+- Optimized image is used
+
 
 ####style.css
 
 ##### .mover
-Added *will-change: transform* in order to force each moving pizza to its own layer.
+- Added *will-change: transform* in order to force each moving pizza to its own layer.
