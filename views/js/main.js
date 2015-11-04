@@ -514,6 +514,7 @@ function updatePositions() {
 
     window.performance.mark("mark_start_frame");
 
+    // Calculations have been moved out of the for loop --->
     var phaseBase = document.body.scrollTop / 1250;
     var phaseValues = [];
     for (var i = 0; i < 5; i++)
@@ -522,11 +523,10 @@ function updatePositions() {
 
     var items = document.getElementsByClassName('mover');
 
-
-
-
+    // <---
+    
     for (var i = 0; i < items.length; i++) {
-        var phase = phaseValues[i % 5];//Math.sin((phaseBase) + (i % 5));
+        var phase = phaseValues[i % 5];
         items[i].style.left = items[i].basicLeft + 100 * phase + 'px';
     }
 
@@ -552,12 +552,14 @@ window.addEventListener('scroll', updatePositions);
 document.addEventListener('DOMContentLoaded', function () {
     var cols = 8;
     var s = 256;
-
+    
+    // Changed number of Pizzas below (fewer to paint) --->
     //for (var i = 0; i < 200; i++) {
     for (var i = 0; i < 50; i++) {
         var elem = document.createElement('img');
         elem.className = 'mover';
         elem.src = "images/pizza-optimized.png";
+        // Use constant values for dimensions --->
         elem.style.height = "73px";
         elem.style.width = "56px";
         elem.basicLeft = (i % cols) * s;
