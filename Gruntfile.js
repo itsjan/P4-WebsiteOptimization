@@ -34,14 +34,14 @@ module.exports = function (grunt) {
                     newFilesOnly: true,
                     sizes: [{
                             name: 'small',
-                            width: '30%',
+                            width: '100px',
                             //suffix: '_small',
-                            quality: 20
+                            quality: 100
                         }, {
                             name: 'large',
                             width: '50%',
                             //suffix: '_large',
-                            quality: 40
+                            quality: 100
                         }]},
                 files: [{
                         expand: true,
