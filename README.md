@@ -1,7 +1,14 @@
 ## Website Performance Optimization portfolio project
 
 
-###Optimizations
+###Part 1
+
+http://localhost:8383/frontend-nanodegree-mobile-portfolio/
+
+
+###Part 2
+http://localhost:8383/frontend-nanodegree-mobile-portfolio/views/pizza.html
+
 
 ####main.js
 
