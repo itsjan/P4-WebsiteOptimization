@@ -568,9 +568,8 @@ document.addEventListener('DOMContentLoaded', function () {
         var elem = document.createElement('img');
         elem.className = 'mover';
         elem.src = "images/pizza-optimized.png";
-        // Use constant values for dimensions --->
-        elem.style.height = "73px";
-        elem.style.width = "56px";
+        elem.style.height = "100px";
+        elem.style.width = "73.333px";
         elem.basicLeft = (i % cols) * s;
         elem.style.top = (Math.floor(i / cols) * s) + 'px';
         document.querySelector("#movingPizzas1").appendChild(elem);
